@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Yatra;src:url(../node_modules/@fontsource/yatra-one/files/yatra-one-devanagari-400-normal.woff2)}
+@font-face{font-family:Mukta;font-weight:500;src:url(../node_modules/@fontsource/mukta/files/mukta-devanagari-500-normal.woff2)}
+@font-face{font-family:Outfit;font-weight:400;src:url(../node_modules/@fontsource/outfit/files/outfit-latin-400-normal.woff2)}
+@font-face{font-family:Outfit;font-weight:600;src:url(../node_modules/@fontsource/outfit/files/outfit-latin-600-normal.woff2)}
+@font-face{font-family:Playfair;font-style:italic;font-weight:500;src:url(../node_modules/@fontsource/playfair-display/files/playfair-display-latin-500-italic.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+body{position:relative;background:
+  radial-gradient(ellipse 70% 45% at 50% 62%, rgba(255,170,60,.28), transparent 70%),
+  radial-gradient(ellipse 120% 80% at 50% 0%, #0f3b47 0%, #0a2830 45%, #061a20 100%);
+  font-family:Outfit,sans-serif;color:#fff}
+.bokeh{position:absolute;border-radius:50%;filter:blur(2px)}
+.top{position:absolute;top:70px;left:0;right:0;text-align:center}
+.eyebrow{font-family:Outfit;font-weight:600;letter-spacing:.42em;font-size:22px;color:#ffd58a;text-transform:uppercase}
+.hindi{font-family:Yatra;font-size:150px;line-height:1.15;margin-top:14px;
+  background:linear-gradient(180deg,#fff3c4 0%,#ffcf5c 45%,#f29a2e 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 6px 24px rgba(255,160,40,.45))}
+.eng{font-family:Playfair;font-style:italic;font-size:44px;color:#fff;margin-top:2px;opacity:.95}
+.msg{position:absolute;top:735px;left:0;right:0;text-align:center}
+.msg .h{font-family:Mukta;font-weight:500;font-size:34px;color:#ffe2a8}
+.msg .e{font-family:Outfit;font-size:25px;color:#cfe6ec;margin-top:6px;letter-spacing:.01em}
+.band{position:absolute;left:0;right:0;bottom:0;height:150px;background:#fff;display:flex;align-items:center;justify-content:center}
+.band img{height:92px}
+.band:before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#00a0e3 0 50%,#62c32a 50% 100%)}
+svg.scene{position:absolute;left:0;top:0}
+</style></head>
+<body>
+<div id="bk"></div>
+<svg class="scene" width="1080" height="1080" viewBox="0 0 1080 1080">
+  <defs>
+    <radialGradient id="flame" cx="50%" cy="65%" r="60%">
+      <stop offset="0" stop-color="#fffbe0"/><stop offset=".45" stop-color="#ffd24d"/><stop offset="1" stop-color="#ff7a1a"/>
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="rgba(255,200,90,.75)"/><stop offset="1" stop-color="rgba(255,150,40,0)"/>
+    </radialGradient>
+    <linearGradient id="clay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e2733a"/><stop offset="1" stop-color="#8f3214"/>
+    </linearGradient>
+    <linearGradient id="win" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9a8"/><stop offset="1" stop-color="#ffb347"/>
+    </linearGradient>
+    <g id="diya">
+      <ellipse cx="0" cy="-34" rx="38" ry="46" fill="url(#halo)"/>
+      <path d="M0,-58 C10,-42 12,-30 0,-20 C-12,-30 -10,-42 0,-58Z" fill="url(#flame)"/>
+      <path d="M-46,-14 Q0,-6 46,-14 Q40,22 0,24 Q-40,22 -46,-14Z" fill="url(#clay)"/>
+      <path d="M-46,-14 Q0,-6 46,-14 Q0,-22 -46,-14Z" fill="#f4a261"/>
+      <path d="M-28,4 Q0,12 28,4" stroke="#ffd27a" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <circle cx="-14" cy="8" r="2.5" fill="#ffd27a"/><circle cx="0" cy="10" r="2.5" fill="#ffd27a"/><circle cx="14" cy="8" r="2.5" fill="#ffd27a"/>
+    </g>
+  </defs>
+
+  <!-- house outline -->
+  <g transform="translate(540,0)">
+    <ellipse cx="0" cy="560" rx="300" ry="150" fill="rgba(255,180,70,.10)"/>
+    <path d="M-210,690 L-210,520 L0,395 L210,520 L210,690" fill="rgba(6,26,32,.55)" stroke="#ffcf6b" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M-250,540 L0,370 L250,540" fill="none" stroke="#ffcf6b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="120" y="408" width="34" height="62" fill="none" stroke="#ffcf6b" stroke-width="5"/>
+    <!-- windows -->
+    <rect x="-160" y="545" width="80" height="70" rx="4" fill="url(#win)"/>
+    <line x1="-120" y1="545" x2="-120" y2="615" stroke="#a5561c" stroke-width="4"/>
+    <line x1="-160" y1="580" x2="-80" y2="580" stroke="#a5561c" stroke-width="4"/>
+    <rect x="80" y="545" width="80" height="70" rx="4" fill="url(#win)"/>
+    <line x1="120" y1="545" x2="120" y2="615" stroke="#a5561c" stroke-width="4"/>
+    <line x1="80" y1="580" x2="160" y2="580" stroke="#a5561c" stroke-width="4"/>
+    <!-- door -->
+    <path d="M-42,690 L-42,580 Q0,548 42,580 L42,690Z" fill="url(#win)"/>
+    <circle cx="26" cy="640" r="5" fill="#a5561c"/>
+    <!-- round attic window -->
+    <circle cx="0" cy="478" r="26" fill="url(#win)"/>
+    <!-- string lights along roof -->
+    <path id="rope" d="M-235,548 Q-118,600 0,402 Q118,600 235,548" fill="none" stroke="rgba(255,220,140,.5)" stroke-width="2"/>
+    <g id="bulbs"></g>
+    <!-- toran -->
+    <g id="toran"></g>
+    <line x1="-260" y1="690" x2="260" y2="690" stroke="#ffcf6b" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- diyas -->
+  <use href="#diya" transform="translate(300,712) scale(.9)"/>
+  <use href="#diya" transform="translate(780,712) scale(.9)"/>
+  <use href="#diya" transform="translate(175,724) scale(.7)"/>
+  <use href="#diya" transform="translate(905,724) scale(.7)"/>
+</svg>
+
+<div class="top">
+  <div class="eyebrow">Festival of Lights</div>
+  <div class="hindi">शुभ दीपावली</div>
+  <div class="eng">Happy Diwali</div>
+</div>
+
+<div class="msg">
+  <div class="h">आपके घर-आँगन में सदा रहे सुख, समृद्धि और रोशनी</div>
+  <div class="e">Wishing every family a home filled with light, love &amp; prosperity</div>
+</div>
+
+<div class="band"><img src="../brand/logo.png"></div>
+
+<script>
+// bulbs on rope
+const rope=document.getElementById('rope'),L=rope.getTotalLength(),g=document.getElementById('bulbs');
+const cols=['#ffd24d','#ff8a3d','#ffe9a8','#62c32a','#00a0e3'];
+for(let i=1;i<22;i++){const p=rope.getPointAtLength(L*i/22);
+ const c=document.createElementNS('http://www.w3.org/2000/svg','circle');
+ c.setAttribute('cx',p.x);c.setAttribute('cy',p.y+6);c.setAttribute('r',6);c.setAttribute('fill',cols[i%5]);
+ c.setAttribute('style','filter:drop-shadow(0 0 6px '+cols[i%5]+')');g.appendChild(c);}
+// toran over door: marigold strand + leaves
+const t=document.getElementById('toran');
+for(let i=0;i<9;i++){const x=-60+i*15,y=572+Math.sin(i/8*Math.PI)*10;
+ const leaf=document.createElementNS('http://www.w3.org/2000/svg','path');
+ leaf.setAttribute('d',`M${x},${y} q-6,14 0,26 q6,-12 0,-26z`);leaf.setAttribute('fill',i%2?'#62c32a':'#3f9a1c');t.appendChild(leaf);
+ const m=document.createElementNS('http://www.w3.org/2000/svg','circle');
+ m.setAttribute('cx',x);m.setAttribute('cy',y);m.setAttribute('r',7);m.setAttribute('fill',i%2?'#ff9f1c':'#ffc93c');t.appendChild(m);}
+// bokeh
+const bk=document.getElementById('bk');let s=7;const r=()=>{s=(s*9301+49297)%233280;return s/233280};
+for(let i=0;i<34;i++){const d=document.createElement('div');d.className='bokeh';const z=6+r()*26;
+ d.style.cssText=`width:${z}px;height:${z}px;left:${r()*1080}px;top:${30+r()*640}px;background:rgba(255,${180+r()*60|0},${80+r()*80|0},${.08+r()*.22})`;bk.appendChild(d);}
+</script>
+</body></html>
