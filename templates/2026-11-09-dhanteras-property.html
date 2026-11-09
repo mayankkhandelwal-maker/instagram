@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Mukta;font-weight:500;src:url(../node_modules/@fontsource/mukta/files/mukta-devanagari-500-normal.woff2)}
+@font-face{font-family:Mukta;font-weight:700;src:url(../node_modules/@fontsource/mukta/files/mukta-devanagari-700-normal.woff2)}
+@font-face{font-family:Outfit;font-weight:400;src:url(../node_modules/@fontsource/outfit/files/outfit-latin-400-normal.woff2)}
+@font-face{font-family:Outfit;font-weight:500;src:url(../node_modules/@fontsource/outfit/files/outfit-latin-500-normal.woff2)}
+@font-face{font-family:Outfit;font-weight:700;src:url(../node_modules/@fontsource/outfit/files/outfit-latin-700-normal.woff2)}
+@font-face{font-family:Outfit;font-weight:800;src:url(../node_modules/@fontsource/outfit/files/outfit-latin-800-normal.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+body{position:relative;font-family:Outfit,sans-serif;background:#fff;color:#0e4b5a}
+.left{position:absolute;left:0;top:0;bottom:150px;width:470px;background:linear-gradient(170deg,#0a7fb5 0%,#00a0e3 55%,#2fb6a0 100%);color:#fff;padding:70px 56px;overflow:hidden}
+.left:after{content:"";position:absolute;right:-120px;bottom:-120px;width:360px;height:360px;border-radius:50%;border:40px solid rgba(255,255,255,.08)}
+.chip{display:inline-block;font-weight:700;font-size:21px;letter-spacing:.14em;padding:9px 18px;border-radius:40px;background:#ffcf6b;color:#0e4b5a}
+.lbl{margin-top:70px;font-size:30px;font-weight:500;line-height:1.25;color:#e3f6fd}
+.big{font-weight:800;font-size:150px;line-height:.95;letter-spacing:-.03em;margin-top:14px}
+.big small{font-size:62px;font-weight:700;letter-spacing:0}
+.big .rs{font-size:96px;vertical-align:top;font-weight:700;margin-right:4px}
+.sub{font-size:44px;font-weight:700;margin-top:6px;line-height:1.2}
+.hi{font-family:Mukta;font-weight:500;font-size:33px;margin-top:70px;color:#fff;line-height:1.35;background:rgba(14,75,90,.25);padding:16px 20px;border-radius:18px}
+.right{position:absolute;left:520px;right:60px;top:70px}
+h2{font-size:44px;font-weight:800;line-height:1.08;color:#0e4b5a}
+h2 span{color:#3f9a1c}
+.tot{font-size:24px;color:#5b8794;margin-top:12px}
+.bars{margin-top:44px;display:flex;flex-direction:column;gap:34px}
+.row .n{display:flex;justify-content:space-between;font-size:26px;font-weight:500;color:#0e4b5a;margin-bottom:8px}
+.row .n b{font-weight:800}
+.track{height:30px;border-radius:16px;background:#eef4f6;overflow:hidden}
+.fill{height:100%;border-radius:16px;background:#b9d3db}
+.row.p .n{color:#2f8a12}
+.row.p .fill{background:linear-gradient(90deg,#62c32a,#3f9a1c)}
+.tip{margin-top:60px;border-left:6px solid #62c32a;padding:4px 0 4px 20px;font-size:25px;line-height:1.3;color:#3d6b77}
+.tip b{color:#0e4b5a}
+.src{position:absolute;left:520px;right:50px;top:880px;font-size:19px;color:#6a929d}
+.band{position:absolute;left:0;right:0;bottom:0;height:150px;background:#fff;display:flex;align-items:center;justify-content:center}
+.band img{height:92px}
+.band:before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#00a0e3 0 50%,#62c32a 50% 100%)}
+</style></head>
+<body>
+<div class="left">
+  <div class="chip">INDORE NEWS</div>
+  <div class="lbl">Property bookings &amp; purchases on Dhanteras</div>
+  <div class="big"><span class="rs">₹</span>300</div>
+  <div class="sub">crore <span style="font-weight:500;opacity:.8">(estimated)</span></div>
+  <div class="hi">धनतेरस पर इंदौर ने<br>प्रॉपर्टी में दिखाया भरोसा</div>
+</div>
+
+<div class="right">
+  <h2>Indore's Dhanteras crossed <span>₹1,000 Cr</span></h2>
+  <div class="tot">Estimated business, by category</div>
+  <div class="bars">
+    <div class="row"><div class="n">Automobiles<b>₹400 Cr</b></div><div class="track"><div class="fill" style="width:100%"></div></div></div>
+    <div class="row p"><div class="n">Property<b>₹300 Cr</b></div><div class="track"><div class="fill" style="width:75%"></div></div></div>
+    <div class="row"><div class="n">Gold &amp; jewellery<b>₹250 Cr</b></div><div class="track"><div class="fill" style="width:62.5%"></div></div></div>
+    <div class="row"><div class="n">Electronics<b>₹100 Cr</b></div><div class="track"><div class="fill" style="width:25%"></div></div></div>
+  </div>
+  <div class="tip"><b>Buying this season?</b> Check MP RERA registration &amp; approvals before you book.</div>
+</div>
+
+<div class="src">Source: Free Press Journal, 6 Nov 2026 · market estimates</div>
+<div class="band"><img src="../brand/logo.png"></div>
+</body></html>
