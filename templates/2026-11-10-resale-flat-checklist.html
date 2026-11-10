@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Mukta;font-weight:500;src:url(../node_modules/@fontsource/mukta/files/mukta-devanagari-500-normal.woff2)}
+@font-face{font-family:Mukta;font-weight:700;src:url(../node_modules/@fontsource/mukta/files/mukta-devanagari-700-normal.woff2)}
+@font-face{font-family:Outfit;font-weight:400;src:url(../node_modules/@fontsource/outfit/files/outfit-latin-400-normal.woff2)}
+@font-face{font-family:Outfit;font-weight:500;src:url(../node_modules/@fontsource/outfit/files/outfit-latin-500-normal.woff2)}
+@font-face{font-family:Outfit;font-weight:700;src:url(../node_modules/@fontsource/outfit/files/outfit-latin-700-normal.woff2)}
+@font-face{font-family:Outfit;font-weight:800;src:url(../node_modules/@fontsource/outfit/files/outfit-latin-800-normal.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+body{position:relative;font-family:Outfit,sans-serif;background:#f3faee;color:#0e4b5a}
+.deco{position:absolute;right:-160px;top:-160px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,#dff3d2 0 60%,transparent 61%)}
+.chip{position:absolute;left:70px;top:62px;font-weight:700;font-size:22px;letter-spacing:.14em;padding:10px 20px;border-radius:40px;background:#62c32a;color:#fff}
+h1{position:absolute;left:70px;right:70px;top:128px;font-weight:800;font-size:66px;line-height:1.04;letter-spacing:-.01em;color:#0e4b5a}
+h1 span{color:#3f9a1c}
+.hi{position:absolute;left:70px;top:278px;font-family:Mukta;font-weight:500;font-size:34px;color:#3d6b77}
+.list{position:absolute;left:60px;right:60px;top:348px;display:flex;flex-direction:column;gap:13px}
+.it{background:#fff;border-radius:22px;padding:15px 26px;display:flex;align-items:center;gap:24px;box-shadow:0 10px 30px rgba(14,75,90,.08)}
+.n{flex:0 0 62px;height:62px;border-radius:50%;background:#0e4b5a;color:#fff;font-weight:800;font-size:30px;display:flex;align-items:center;justify-content:center}
+.it:nth-child(even) .n{background:#00a0e3}
+.t{font-weight:700;font-size:31px;line-height:1.1}
+.d{font-size:22px;color:#5b8794;margin-top:4px}
+.band{position:absolute;left:0;right:0;bottom:0;height:150px;background:#fff;display:flex;align-items:center;justify-content:center}
+.band img{height:92px}
+.band:before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#00a0e3 0 50%,#62c32a 50% 100%)}
+</style></head>
+<body>
+<div class="deco"></div>
+<div class="chip">BUYER TIP</div>
+<h1>Buying a resale flat?<br><span>Check these 5 first.</span></h1>
+<div class="hi">रीसेल फ्लैट खरीदने से पहले ज़रूर जाँचें</div>
+<div class="list">
+  <div class="it"><div class="n">1</div><div><div class="t">Full title chain</div><div class="d">All past sale deeds – up to the original allotment</div></div></div>
+  <div class="it"><div class="n">2</div><div><div class="t">No loan or legal dispute</div><div class="d">Encumbrance search + bank NOC if the flat is mortgaged</div></div></div>
+  <div class="it"><div class="n">3</div><div><div class="t">Approved map &amp; completion</div><div class="d">Sanctioned building plan and completion / occupancy certificate</div></div></div>
+  <div class="it"><div class="n">4</div><div><div class="t">Society NOC &amp; dues</div><div class="d">No pending maintenance; transfer allowed by society</div></div></div>
+  <div class="it"><div class="n">5</div><div><div class="t">Tax &amp; bills cleared</div><div class="d">Latest property tax, water &amp; electricity receipts</div></div></div>
+</div>
+<div class="band"><img src="../brand/logo.png"></div>
+</body></html>
