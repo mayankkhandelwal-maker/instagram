@@ -1,0 +1,13 @@
+@font-face{font-family:Mukta;font-weight:500;src:url(../node_modules/@fontsource/mukta/files/mukta-devanagari-500-normal.woff2)}
+@font-face{font-family:Mukta;font-weight:700;src:url(../node_modules/@fontsource/mukta/files/mukta-devanagari-700-normal.woff2)}
+@font-face{font-family:Outfit;font-weight:400;src:url(../node_modules/@fontsource/outfit/files/outfit-latin-400-normal.woff2)}
+@font-face{font-family:Outfit;font-weight:500;src:url(../node_modules/@fontsource/outfit/files/outfit-latin-500-normal.woff2)}
+@font-face{font-family:Outfit;font-weight:700;src:url(../node_modules/@fontsource/outfit/files/outfit-latin-700-normal.woff2)}
+@font-face{font-family:Outfit;font-weight:800;src:url(../node_modules/@fontsource/outfit/files/outfit-latin-800-normal.woff2)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1080px;overflow:hidden}
+body{position:relative;font-family:Outfit,sans-serif;color:#0e4b5a}
+.hi{font-family:Mukta,Outfit}
+.band{position:absolute;left:0;right:0;bottom:0;height:150px;background:#fff;display:flex;align-items:center;justify-content:center}
+.band img{height:92px}
+.band:before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#00a0e3 0 50%,#62c32a 50% 100%)}

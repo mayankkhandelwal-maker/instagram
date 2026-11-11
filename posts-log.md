@@ -1,6 +1,10 @@
 # Posts log (newest first)
 | Date | Type | Topic | Image |
 |---|---|---|---|
+| 2026-11-11 | Reel (manual, browser) | Indore Metro NCMC card – 25% off rides above ₹20 (Metro Rail News, 11 Nov) | 2026-11/2026-11-11-reel-metro-ncmc.mp4 |
+| 2026-11-11 | General (manual, browser) | Engagement poll: next home – Vijay Nagar / Super Corridor / Nipania / Rau | 2026-11/2026-11-11-locality-poll.jpg |
+| 2026-11-11 | General (manual, browser) | Plot vs Flat comparison | 2026-11/2026-11-11-plot-vs-flat.jpg |
+| 2026-11-11 | General (manual, browser) | MP RERA 4-step check before booking a flat | 2026-11/2026-11-11-rera-check.jpg |
 | 2026-11-11 | News (19:30) | Indore Metro NCMC card from 12 Nov: ₹50 card, 25% off rides above ₹20 (Metro Rail News, 11 Nov) | 2026-11/2026-11-11-metro-ncmc-card.jpg |
 | 2026-11-10 | Buyer tip (19:30) | Resale flat checklist: 5 documents to check before buying | 2026-11/2026-11-10-resale-flat-checklist.jpg |
 | 2026-11-09 | News (19:30) | Dhanteras 2026 Indore: ~₹300 Cr property bookings of ₹1,070 Cr total (FPJ, 6 Nov) | 2026-11/2026-11-09-dhanteras-property.jpg |
